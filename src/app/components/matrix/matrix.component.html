@@ -1,0 +1,14 @@
+<div class="matrix">
+  <div id="robby" #robby></div>
+  <div class="row" *ngFor="let row of getMatrix()">
+    <div
+      class="block"
+      [class.s]="block.text === 'S'"
+      [class.t]="block.text === 'T'"
+      [class.sh]="block.text === '#'"
+      [class.way]="block.isWay"
+      *ngFor="let block of row"></div>
+  </div>
+</div>
+<p>{{ matrixService.way.getWayAsString() }}</p>
+<button (click)="play()" *ngIf="matrixService.matrix.sqrt">Play</button>

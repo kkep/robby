@@ -1,0 +1,39 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result{
+  width: 500px;
+  height: 500px;
+  box-shadow: -1px -1px 5px 0 white, 1px 1px 5px 0 #cfcfcf;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs{
+  margin-top: 10px;
+  box-shadow: -1px -1px 5px 0 white, 1px 1px 5px 0 #cfcfcf;
+  display: flex;
+  width: 500px;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  > input {
+    margin: 10px;
+    padding: 8px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0 #cccccc;
+    outline: none;
+    text-align: center;
+  }
+}
+
+app-matrix{
+  text-align: center;
+}
